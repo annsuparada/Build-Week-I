@@ -1,40 +1,84 @@
-.home {
-    
+.heading {
+    width: 100%;
+    padding: 50px 0 10px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 3px solid @lightblue;
     background-color: @gray;
-    .top {
-        padding: 50px 0 10px;
-        display: flex;
-        justify-content: flex-end;
-        border-bottom: 2px solid @lightblue;
-        
-        .top-img {
-            width: 500px;
-            border-radius: 10px;
-        }
-
-        h1 {
-            color: @lightblue;
-            text-align: center;
-            letter-spacing: 5px;
-            display: flex;
-            justify-content: center;
-            flex-flow: column;
-            align-items: center;
-        }
+    
+    .heading-img {
+        width: 600px;
+        border-radius: 10px;
     }
 
+    h1 {
+        color: @lightblue;
+        text-align: center;
+        letter-spacing: 5px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+.home {
+    
+    h2 {
+        
+        color: @gray;
+        padding: 5px;
+        text-align: center;
+        padding: 8px;
+        border-bottom: 5px solid @gray;
+        margin-top: 50px;
+        
+    }
+
+    .top-content {
+        padding: 20px;
+        margin-top: 20px;
+        display: flex;
+        border-bottom: 5px solid @gray;
+        
+        
+       
+        p {
+            color: @gray;
+            font-size: 1.8rem;
+        }
+
+        .top-text-content {
+            
+            padding: 20px;
+            .top-cotent-img{
+                width: 500px;
+                align-items: center;
+            }
+        }
+    }
     .middle-content {
         padding: 20px;
         margin-top: 20px;
+        display: flex;
+        border-bottom: 5px solid @gray;
 
+        
         h2 {
-            color: @lightblue;
-            padding: 2px;
+            color: @gray;
+            padding: 5px;
         }
         p {
-            
+            color: @gray;
         }
 
+        .content {
+            padding: 15px;
+            .cotent-img {
+                width: 300px;
+            }
+        }
+        
     }
 } 
 //home
