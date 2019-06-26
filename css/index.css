@@ -336,47 +336,53 @@ footer p {
     width: 100%;
   }
 }
-.home .middle-content {
+.home .articles {
   padding: 20px;
   margin-top: 20px;
   display: flex;
   border-bottom: 5px solid #6e8298;
 }
 @media (max-width: 900px) {
-  .home .middle-content {
+  .home .articles {
     flex-direction: column;
   }
 }
 @media (max-width: 500px) {
-  .home .middle-content {
+  .home .articles {
     flex-direction: column;
   }
 }
-.home .middle-content h2 {
+.home .articles h2 {
   color: #6e8298;
   padding: 5px;
 }
-.home .middle-content p {
+.home .articles p {
   color: #6e8298;
   margin-bottom: 10px;
 }
-.home .middle-content .content {
+.home .articles .article-open {
+  display: block;
+}
+.home .articles .hidden {
+  display: none;
+}
+.home .articles .article {
   padding: 15px;
 }
-.home .middle-content .content .cotent-img {
+.home .articles .article .cotent-img {
   width: 340px;
 }
 @media (max-width: 900px) {
-  .home .middle-content .content .cotent-img {
+  .home .articles .article .cotent-img {
     width: 100%;
   }
 }
 @media (max-width: 500px) {
-  .home .middle-content .content .cotent-img {
+  .home .articles .article .cotent-img {
     width: 100%;
   }
 }
-.home .middle-content .content .btn {
+.home .articles .article .expandButton {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -391,7 +397,7 @@ footer p {
   cursor: pointer;
   font-size: 2rem;
 }
-.home .middle-content .content .btn:hover {
+.home .articles .article .expandButton:hover {
   background-color: #424f5e;
 }
 .heading-about {

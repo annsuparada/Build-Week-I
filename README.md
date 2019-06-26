@@ -9,10 +9,10 @@
 **Tuesday
 [x] Marketing site including all pages fully responsive to Mobile and Desktop screen widths
 [x] All pages laid out all that's left for each page are styling tweaks
-[] Marketing "Login" call to action links user to the Deployed React app login screen
+[x] Marketing "Login" call to action links user to the Deployed React app login screen
 
 **Wednesday
-[]  Marketing site replace placeholder copy with description of product. Be creative here. Really try and describe your project, your project's features and of course have a cool "About Us" page with relevant copy that describes your team members and their roles.
+[x]  Marketing site replace placeholder copy with description of product. Be creative here. Really try and describe your project, your project's features and of course have a cool "About Us" page with relevant copy that describes your team members and their roles.
 [x] All marketing site pages fully responsive and built out, may still need to polish up styling and layout.
 
 ** Thursday

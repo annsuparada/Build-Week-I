@@ -80,7 +80,7 @@
             }
         }
     }
-    .middle-content {
+    .articles {
         padding: 20px;
         margin-top: 20px;
         display: flex;
@@ -102,7 +102,14 @@
             margin-bottom: 10px;
         }
 
-        .content {
+        .article-open{
+            display: block;
+        }
+        .hidden {
+            display: none;
+        }
+
+        .article {
             padding: 15px;
             .cotent-img {
                 width: 340px;
@@ -113,7 +120,7 @@
                     width: 100%;
                 }
             }
-            .btn {
+            .expandButton {
                 .button-creator(120px, 40px, @btn-bg-color, @btn-font-color, 1.2rem);
             }
         }
