@@ -195,9 +195,18 @@ p {
   margin-top: 9px;
   font-size: 3.5rem;
   color: #6e8298;
+  text-decoration: none;
+}
+.main-nav a {
+  font-size: 2rem;
+  color: #6e8298;
+  text-decoration: none;
+}
+.main-nav a:hover {
+  text-decoration: underline;
 }
 .main-nav nav {
-  width: 60%;
+  width: 40%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -212,13 +221,28 @@ p {
   }
 }
 .main-nav nav a {
-  font-size: 2rem;
-  color: #6e8298;
   margin-top: 12px;
-  text-decoration: none;
 }
 .main-nav nav a:hover {
   text-decoration: underline;
+}
+.main-nav button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  background-color: #6e8298;
+  color: #d1fff5;
+  border: 1px solid #6e8298;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.main-nav button:hover {
+  background-color: #424f5e;
 }
 footer {
   width: 100%;

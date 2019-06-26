@@ -13,7 +13,7 @@
 
 **Wednesday
 []  Marketing site replace placeholder copy with description of product. Be creative here. Really try and describe your project, your project's features and of course have a cool "About Us" page with relevant copy that describes your team members and their roles.
-[] All marketing site pages fully responsive and built out, may still need to polish up styling and layout.
+[x] All marketing site pages fully responsive and built out, may still need to polish up styling and layout.
 
 ** Thursday
 [] Strong emphasis on bug fixes and UI/UX. 
