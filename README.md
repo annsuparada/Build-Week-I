@@ -7,7 +7,7 @@
 [x] Lorem ipsum can be used to fill in your content on your pages. Links listed below.
 
 **Tuesday
-[] Marketing site including all pages fully responsive to Mobile and Desktop screen widths
+[x] Marketing site including all pages fully responsive to Mobile and Desktop screen widths
 [x] All pages laid out all that's left for each page are styling tweaks
 [] Marketing "Login" call to action links user to the Deployed React app login screen
 
@@ -23,7 +23,7 @@
 [x] Student's work demonstrates that all MVP features were built
 [] Communicated changes to team, performed proper git merges and pull requests to get code to the codebase.
 [x] Student layed out the design that matches the example well.  CSS fundamentals such as: box model, flexbox, and positioning were used appropriately. 
-[] Phone views look professional at 500px and below and Desktop views look professional at 1000px and above. No horizontal scrollbars exist.
+[x] Phone views look professional at 500px and below and Desktop views look professional at 1000px and above. No horizontal scrollbars exist.
 [] Objects were created, Array methods were used, code is readable. No errors in the console when opening the web page.
 [] Event Listeners were used, DOM manipulation occured
 
