@@ -164,9 +164,14 @@ p {
 }
 .main-nav {
   width: 100%;
-  height: 50px;
   background-color: #d1fff5;
   position: fixed;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .main-nav {
+    width: 500px;
+  }
 }
 .main-nav .nav-container {
   height: 100%;
@@ -175,20 +180,44 @@ p {
   justify-content: space-between;
   flex-direction: row;
 }
+@media (max-width: 900px) {
+  .main-nav .nav-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .main-nav .nav-container {
+    flex-direction: column;
+  }
+}
 .main-nav h1 {
-  margin-top: 7px;
+  margin-top: 9px;
   font-size: 3.5rem;
   color: #6e8298;
 }
 .main-nav nav {
-  width: 40%;
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 900px) {
+  .main-nav nav {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .main-nav nav {
+    width: 100%;
+  }
 }
 .main-nav nav a {
   font-size: 2rem;
   color: #6e8298;
-  margin-top: 10px;
+  margin-top: 12px;
+  text-decoration: none;
+}
+.main-nav nav a:hover {
+  text-decoration: underline;
 }
 footer {
   width: 100%;
@@ -202,25 +231,22 @@ footer p {
   padding-top: 10px;
 }
 .heading {
-  width: 100%;
-  padding: 50px 0 10px;
-  display: flex;
-  justify-content: space-evenly;
-  border-bottom: 3px solid #d1fff5;
-  background-color: #6e8298;
+  background-image: url(img/heading-bg.png);
+  background-size: cover;
+  background-position: center;
 }
 .heading .heading-img {
-  width: 600px;
-  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
 }
 .heading h1 {
   color: #d1fff5;
   text-align: center;
-  letter-spacing: 5px;
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .home h2 {
   color: #6e8298;
@@ -228,13 +254,23 @@ footer p {
   text-align: center;
   padding: 8px;
   border-bottom: 5px solid #6e8298;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .home .top-content {
   padding: 20px;
   margin-top: 20px;
   display: flex;
   border-bottom: 5px solid #6e8298;
+}
+@media (max-width: 900px) {
+  .home .top-content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home .top-content {
+    flex-direction: column;
+  }
 }
 .home .top-content p {
   color: #6e8298;
@@ -247,11 +283,31 @@ footer p {
   width: 500px;
   align-items: center;
 }
+@media (max-width: 900px) {
+  .home .top-content .top-text-content .top-cotent-img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .top-content .top-text-content .top-cotent-img {
+    width: 100%;
+  }
+}
 .home .middle-content {
   padding: 20px;
   margin-top: 20px;
   display: flex;
   border-bottom: 5px solid #6e8298;
+}
+@media (max-width: 900px) {
+  .home .middle-content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home .middle-content {
+    flex-direction: column;
+  }
 }
 .home .middle-content h2 {
   color: #6e8298;
@@ -266,6 +322,16 @@ footer p {
 }
 .home .middle-content .content .cotent-img {
   width: 340px;
+}
+@media (max-width: 900px) {
+  .home .middle-content .content .cotent-img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .middle-content .content .cotent-img {
+    width: 100%;
+  }
 }
 .home .middle-content .content .btn {
   -webkit-border-radius: 5px;
@@ -303,9 +369,6 @@ footer p {
 .about .top-about {
   align-items: center;
 }
-.about .top-about .who-img {
-  width: 1000px;
-}
 .about .top-about .h2-who {
   color: #6e8298;
   padding: 5px;
@@ -316,13 +379,32 @@ footer p {
 }
 .about .info {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 30px;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .about .info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.about .info .info-name {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
 .about .info .info-name .info-img {
-  width: 250px;
+  width: 220px;
   box-shadow: 10px 10px 5px grey;
+  border-radius: 50%;
+}
+@media (max-width: 900px) {
+  .about .info .info-name .info-img {
+    width: 150px;
+  }
+}
+@media (max-width: 500px) {
+  .about .info .info-name .info-img {
+    width: 250px;
+  }
 }
 .about .info .info-name h4 {
   font-size: 1.5rem;
@@ -337,4 +419,8 @@ footer p {
   font-size: 1.5rem;
   color: #6e8298;
   text-decoration: none;
+}
+.about .info .info-name a:hover {
+  background-color: #6e8298;
+  color: #d1fff5;
 }

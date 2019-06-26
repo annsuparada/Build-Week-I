@@ -1,24 +1,33 @@
 .heading {
-    width: 100%;
-    padding: 50px 0 10px;
-    display: flex;
-    justify-content: space-evenly;
-    border-bottom: 3px solid @lightblue;
-    background-color: @gray;
+    // width: 100%;
+    // padding: 50px 0 10px;
+    // display: flex;
+    // justify-content: space-evenly;
+    // border-bottom: 3px solid @lightblue;
+    // background-color: @gray;
+    
+    background-image: url(img/heading-bg.png);
+    background-size: cover;
+    background-position: center;
     
     .heading-img {
-        width: 600px;
-        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        // background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        
     }
 
     h1 {
         color: @lightblue;
         text-align: center;
-        letter-spacing: 5px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // @media @phone {
+        //     top:20%;
+        // }
     }
 }
 
@@ -31,7 +40,7 @@
         text-align: center;
         padding: 8px;
         border-bottom: 5px solid @gray;
-        margin-top: 50px;
+        margin-top: 10px;
         
     }
 
@@ -40,7 +49,12 @@
         margin-top: 20px;
         display: flex;
         border-bottom: 5px solid @gray;
-        
+        @media @tablet {
+            flex-direction: column;
+        }
+        @media @phone {
+            flex-direction: column;
+        }
         
        
         p {
@@ -54,6 +68,12 @@
             .top-cotent-img{
                 width: 500px;
                 align-items: center;
+                @media @tablet {
+                    width: 100%;
+                }
+                @media @phone {
+                    width: 100%;
+                }
             }
         }
     }
@@ -62,6 +82,12 @@
         margin-top: 20px;
         display: flex;
         border-bottom: 5px solid @gray;
+        @media @tablet {
+            flex-direction: column;
+        }
+        @media @phone {
+            flex-direction: column;
+        }
 
         
         h2 {
@@ -77,6 +103,12 @@
             padding: 15px;
             .cotent-img {
                 width: 340px;
+                @media @tablet {
+                    width: 100%;
+                }
+                @media @phone {
+                    width: 100%;
+                }
             }
             .btn {
                 .button-creator(120px, 40px, @btn-bg-color, @btn-font-color, 1.2rem);
