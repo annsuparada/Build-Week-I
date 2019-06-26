@@ -1,19 +1,13 @@
-.heading {
-    // width: 100%;
-    // padding: 50px 0 10px;
-    // display: flex;
-    // justify-content: space-evenly;
-    // border-bottom: 3px solid @lightblue;
-    // background-color: @gray;
-    
+.heading { 
     background-image: url(img/heading-bg.png);
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: -1;
     
     .heading-img {
         width: 100%;
         height: auto;
-        // background: rgb(0, 0, 0);
         background: rgba(0, 0, 0, 0.5);
         
     }
@@ -24,10 +18,18 @@
         position: absolute;
         top: 40%;
         left: 50%;
+        font-size: 4rem;
         transform: translate(-50%, -50%);
-        // @media @phone {
-        //     top:20%;
-        // }
+        @media @tablet {
+            font-size: 3rem;
+            top: 30%;
+            margin-top: 75px;
+        }
+        @media @phone {
+            font-size: 2rem;
+            top: 30%;
+            margin-top: 75px;
+        }
     }
 }
 

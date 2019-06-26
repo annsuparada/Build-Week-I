@@ -178,6 +178,7 @@ p {
   display: flex;
   align-items: left;
   justify-content: space-between;
+  z-index: 100;
   flex-direction: row;
 }
 @media (max-width: 900px) {
@@ -234,6 +235,8 @@ footer p {
   background-image: url(img/heading-bg.png);
   background-size: cover;
   background-position: center;
+  position: relative;
+  z-index: -1;
 }
 .heading .heading-img {
   width: 100%;
@@ -246,7 +249,22 @@ footer p {
   position: absolute;
   top: 40%;
   left: 50%;
+  font-size: 4rem;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 900px) {
+  .heading h1 {
+    font-size: 3rem;
+    top: 30%;
+    margin-top: 75px;
+  }
+}
+@media (max-width: 500px) {
+  .heading h1 {
+    font-size: 2rem;
+    top: 30%;
+    margin-top: 75px;
+  }
 }
 .home h2 {
   color: #6e8298;
