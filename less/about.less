@@ -3,10 +3,12 @@
     padding: 50px 0 10px;
     .h2-about{
         color: @lightblue;
-        padding: 5px;
         text-align: center;
         padding: 8px;
         margin-top: 50px;
+        @media @tablet{
+            margin-top:75px;
+        }
     }
 
     p {
@@ -22,11 +24,12 @@
         
         .h2-who {
             color: @gray;
-            padding: 5px;
             text-align: center;
             padding: 8px;
             margin-top: 50px;
             border-bottom: 5px solid @gray;
+
+            
         }
     }
     
@@ -34,6 +37,9 @@
     .info {
         display: flex;
         justify-content: space-evenly;
+        @media @tablet{
+            margin-left: 5%;
+        }
         @media @phone {
             flex-direction: column;
             align-items: center;
